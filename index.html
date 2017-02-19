@@ -4,8 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css1/main.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Libre+Baskerville" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans+Condensed:300" rel="stylesheet">
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
@@ -18,7 +23,16 @@ body, html {
     color: #777;
     line-height: 1.8;
 }
+/*font choose*/
+.font11{font-family: 'Amatic SC', cursive;
 
+}
+.font22{
+  font-family: 'Fredericka the Great', cursive;
+}
+.font33{font-family: 'Open Sans Condensed', sans-serif;
+
+}
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
@@ -30,7 +44,7 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url('photo/j.png');
-    min-height: 100%;
+    min-height: 400px;
 }
 
 /* Second image (Portfolio) */
@@ -58,56 +72,55 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <ul class="w3-navbar" id="myNavbar">
-    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+<div class="font33 w3-top" style="font-weight: bold;font-size: 20px"">
+  <ul class="w3-navbar w3-right" id="myNavbar">
+    <!--<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
       <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
-    </li>
-    <li class="w3-left-align"><a href="https://ybruce61414.github.io/myblog/">HOME</a></li>
-    <li class="w3-hide-small"><a href="https://ybruce61414.github.io/alesandra/"><i class="fa fa-user"></i> ABOUT</a></li>
-    <li class="w3-hide-small"><a href="#portfolio"><i class="fa fa-th"></i> CONTENT</a></li>
-    <li class="w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
-    <li class="w3-hide-small w3-right">
+    </li>-->
+    <li class="w3-hide-small w3-right ">
       <a href="#" class="w3-hover-red">
-        <i class="fa fa-search"></i>
-      </a>
-    </li>
+        <i class="fa fa-search"></i></a></li>
+    <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-red"><i class="fa fa-envelope"></i> CONTACT</a></li>    
+    <li class="w3-hide-small  w3-right"><a href="#portfolio" class="w3-hover-red"><i></i> CONTENT</a></li>  
+    <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-red"><i></i> ABOUT</a></li>
+    <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/myblog/" class="w3-hover-red">HOME</a></li>
+    
   </ul>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+  <!--<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
     <ul class="w3-navbar w3-left-align w3-white">
       <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
       <li><a href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a></li>
       <li><a href="#contact" onclick="toggleFunction()">CONTACT</a></li>
       <li><a href="#">SEARCH</a></li>
     </ul>
-  </div>
+  </div>-->
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle w3-padding-xxlarge w3-border w3-wide w3-text-light-grey w3-center">
-    <span class="w3-hide-medium w3-hide-small w3-xxlarge" style="line-height:140%">SINGLE-MOLECULE FLUORESCENCE LIFETIME IMAGING</span>
-    <span class="w3-hide-large" style="white-space:nowrap">ARTIFACT</span>
-    <span class="w3-hide-medium w3-hide-small">ARTIFACT</span>
+<div class="bgimg-1 w3-display-container w3-opacity-min font" id="home">
+  <div class="w3-display-middle w3-padding-xxlarge w3-wide w3-text-light-grey w3-center">
+    <span class="font33 w3-hide-medium w3-hide-small w3-jumbo" style="line-height:140%">Research</span>
+    
+    <span class="font33 w3-hide-medium w3-hide-small w3-large" style="white-space:nowrap">SINGLE-MOLECULE FLUORESCENCE LIFETIME IMAGING</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <!-- intro-->
 <div class="w3-content w3-container w3-padding-jumbo" id="about">
-  <h3 style="font-weight: bold;font-size: 30px">Abstract</h3>
+  <h3 class="font11" style="font-weight: bold;font-size: 40px">Abstract</h3>
   <p class="w3-large w3-text-grey" style="font-size:18px">Utilizing a single molecule as a sensitive scanning probe, we demostrate the nanoscale fluorescence lifetime imaging of the gold nanorod dimer by calculating Purcell factor, which reveals the information on the local density of optical states. Also, the numerical results show that the spatial resolution of lifetime imaging differs significantly from orientation of emitting molecule and we address the general method to distinguish the artifacts from fluorescence lifetime imaging compared to the real morphology of gold nanorod dimer. Furthermore, the spectral dependence and size dependence of the Purcell effect for a single molecule interacting with dimer of gold nanorods deposited on the glass is investigated.</p>
 
-  <h3 style="font-weight: bold;font-size: 30px">Introduction</h3>
+  <h3 class="font11" style="font-weight: bold;font-size: 40px">Introduction</h3>
   <!--<p class="w3-center"><em>plasmonics</em></p>-->
   <p class="w3-large w3-text-grey" style="font-size:18px">The lifetime of an excited molecule located near a metallic nanoparticle has recently been the subject of many experimental and theoretical investigations ranging from nanoplasmonics and optoelectronics to biomedical imaging. Due to the pioneering work of Purcell it has been known that the spontaneous emittion of an emitting molecule can be tailored by its environment. However, the spontaneous emission rate is governed by the local density of optical states (LDOS), which is properly defined as the imaginary part of the Green's function `Im{G}`. The LDOS  includes all channels offered by the environment, i,e, radiative decay into the far field, nonradiative decay into the confined nanostructure, and quenching. Since in various applications nanophotonic structures are empolyed, it should be of interest to explore . <br/> &nbsp;&nbsp;&nbsp;&nbsp;  </p>
 
 <!-- theory-->
-  <h3 style="font-weight: bold;font-size: 30px">General Theory</h3>
+  <h3 class="font11" style="font-weight: bold;font-size: 40px">General Theory</h3>
   <p class="w3-large w3-text-grey" style="font-size:18px">The lifetime  of excited molecule is determined by taking the the inverse of total decay rate of energy dissipation. Because the Green's function is the response of the electric field due to a point source, it is possible to represent the emitting molecule by a classical dipole. The total decay rate of emitting dipole can be obtained by considering the two mechanisms. One is the radiative loss, which is calculated from the Poyting vector, and the other is the nonradiative decay, which is calculated from the Ohmic losses inside the metallic nanostructure and the intrinsic property independent of nanostructure-dipole distance, respectively.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;Let's denote the total decay rate of the emitting dipole in free space as `gamma^o= gamma_(r)^o + gamma_(nr)^o`, where ` gamma_(r)^o` and `gamma_(nr)^o` are the radiative and intrinsic nonradiative decay rates of emitting dipole. The intrinsic quantum yield of single dipole is defined as `eta^o =  gamma_(r)^o`/(`gamma_(r)^o +gamma_(nr)^o`). While the presence of the nanostructure introduces the an additional nonradiative rate  `gamma_(a)`, the quantum yield is thereby modified to `eta =  gamma_(r)`/(`gamma_(r) +gamma_(nr)^o +gamma_(a)`). Here we assume that the dipole has high intrinsic quantum yield(`eta^o =  1`), and we obtain `eta =  gamma_(r)`/(`gamma_(r) +gamma_(a)`). As a result, `gamma_(a)` become the only nonradiative decay channel, that is, the Ohmic loss in the metal. A shorter distance between the molecule and the metallic nanostructure can always cause the stronger absorption and dissaption by metallic nanostructure, even though it also induces stronger local electric field in the vicinity of a metallic nanostructure. The energy transfered rate to metallic nanoparticle(`gamma_(a)`) can be deduced from the power `P_(a)` which is radiated by the dipole and absorbed in the metallic nanoparticle.
   Acorrding to Time-Harmonic Poyting Theorem, the power radiated by the dipole and absorbed inside the metallic nanoparticle  with frequency-dependent dielectric constant `epsilon(omega)` can be calculated as
@@ -172,7 +185,7 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 style="font-weight: bold;font-size: 30px">Numerical Results</h3>
+  <h3 class="font11" style="font-weight: bold;font-size: 40px">Numerical Results</h3>
 
  <p class="w3-large w3-text-grey" style="font-size:18px">1.Spectrum of emitting dipole and palnwave(x-orientation).  </p> 
 
