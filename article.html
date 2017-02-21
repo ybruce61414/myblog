@@ -12,10 +12,18 @@
 <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Libre+Baskerville" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans+Condensed:300" rel="stylesheet">
 
+<!--mathjax-->
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
 
 <style>
+/*control image size*/
+img.resize{
+   width:100%;
+   height:500px;
+}
+.myMOUSE{ cursor: pointer; }
+
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Lora', serif;
 }
 body, html {
@@ -42,7 +50,7 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url('photo/vp.jpg');
-    min-height: 400px;
+    min-height: 300px;
 }
 
 /* Second image (Portfolio) */
@@ -103,22 +111,118 @@ body, html {
   <div class="w3-display-middle w3-padding-xxlarge w3-wide w3-text-light-grey w3-center">
     <span class="font33 w3-hide-medium w3-hide-small" style="line-height:140%;font-size: 80px">Article</span>
     
-    <span class="font33 w3-hide-medium w3-hide-small w3-large" style="white-space:nowrap">ALL RECORDS OF MY LIFE </span>
+    <span class="font33 w3-hide-medium w3-hide-small w3-large" style="white-space:nowrap">MOVIE REVIEW/ MISCELLANY/ TUTORIAL NOTE </span>
   </div>
 </div>
 
-<ul class="w3-navbar font33 w3-black w3-center">
-  <li style="width:25%"" class="w3-hide-small">&nbsp;</li>
-  <li style="width:16.66%"><a href="javascript:void(0)" class="tablink w3-hover-red" onclick="openLink(event, 'Fade')">MOVIE REVIEW</a></li>
-  <li style="width:16.66%"><a href="#" class="w3-hover-red">MISCELLANY</a></li>
-  <li style="width:16.66%"><a href="#" class="w3-hover-red">TUTORIAL NOTE</a></li>
+<ul class="w3-navbar font11 w3-black w3-center w3-xlarge">
+  <li style="width:25%" class="w3-hide-small">&nbsp;</li>
+  <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'Fade')">/ MOVIE REVIEW</a></li>
+  <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'left')">/ MISCELLANY</a></li>
+  <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'last')">/ TUTORIAL NOTE</a></li>
   <li style="width:25%"" class="w3-hide-small">&nbsp;</li>
 </ul>
 
 
-<div style="margin-left:130px">
-<div id="Fade" class="w3-container city w3-animate-opacity" style="display:none">
-    <h2>Fade in</h2>
-    <p>London is the capital city of England.</p>
-    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  </div></div>
+<div id="Fade" style="display:none;background-color:white;" class="city w3-animate-opacity w3-row">
+
+    <div class="w3-quarter">
+      <img class="resize"  src="photo_a/h.jpg"  onclick="onClick(this)" alt="prometheous">
+      <img class="resize"  src="photo_a/ap.jpg"  onclick="onClick(this)" alt="loster">
+    </div>
+    <div class="w3-quarter">  
+      <img class="resize" src="photo_a/p.jpg" onclick="onClick(this)" alt="prometheous">
+      <img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">
+    </div>
+    <div class="w3-quarter">  
+      <img class="resize" src="photo_a/hard.jpg" onclick="onClick(this)" alt="henry">
+      <img class="resize" src="photo_a/c.jpeg" onclick="onClick(this)" alt="coherence">
+    </div>
+    <div class="w3-quarter">  
+      <img class="resize" src="photo_a/i.jpg" onclick="onClick(this)" alt="innocence">
+      <img class="resize" src="photo_a/moon.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+
+
+  </div>
+
+
+  <div id="left" style="display:none;background-color:blue;" class="city w3-animate-opacity w3-row-padding w3-padding-16 w3-center">
+
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
+      <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
+      <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+  </div>
+
+
+  <div id="last" style="display:none;background-color:white;" class="city w3-animate-opacity w3-row-padding w3-padding-16 w3-center">
+
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
+      <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
+      <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+  </div>
+
+
+  <script>
+function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+
+
+  
