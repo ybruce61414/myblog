@@ -17,10 +17,13 @@
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
 
 <style>
+
+.w3-col img{margin-bottom: -6px; cursor: pointer}
+.w3-col img:hover{opacity: 0.75; transition: 0.3s}
 /*control image size*/
 img.resize{
    width:100%;
-   height:500px;
+   height:324px;
 }
 .myMOUSE{ cursor: pointer; }
 
@@ -75,35 +78,26 @@ body, html {
     }
 }
 </style>
+<header class="font33 w3-top w3-xlarge w3-padding-0">
+  <span class="w3-left w3-padding">Viola's Blog</span>
+  </header>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="font33 w3-top" style="font-weight: bold;font-size: 18px"">
+<div class="font33 w3-top" style="font-weight: bold;font-size: 18px">
   <ul class="w3-navbar w3-right" id="myNavbar">
     <!--<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
       <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
     </li>-->
-    <li class="w3-hide-small w3-right ">
-      <a href="#" class="w3-hover-red">
-        <i class="fa fa-search"></i></a></li>
+    <li class="w3-hide-small w3-right "><a href="#" class="w3-hover-red"><i class="fa fa-search"></i></a></li>
     <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-red"><i class="fa fa-envelope"></i> CONTACT</a></li>    
     <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/article.html" class="w3-hover-red"><i></i> ARTICLE</a></li>  
     <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/" class="w3-hover-red"><i></i> RESEARCH</a></li>
     <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-red">HOME</a></li>
     
   </ul>
-
-  <!-- Navbar on small screens -->
-  <!--<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
-    <ul class="w3-navbar w3-left-align w3-white">
-      <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
-      <li><a href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a></li>
-      <li><a href="#contact" onclick="toggleFunction()">CONTACT</a></li>
-      <li><a href="#">SEARCH</a></li>
-    </ul>
-  </div>-->
 </div>
 
 <!-- First Parallax Image with Logo Text -->
@@ -124,27 +118,35 @@ body, html {
 </ul>
 
 
-<div id="Fade" style="display:none;background-color:white;" class="city w3-animate-opacity w3-row">
+<div id="Fade" style="display:none;background-color:black;" class="city w3-animate-opacity w3-row">
 
-    <div class="w3-quarter">
-      <img class="resize"  src="photo_a/h.jpg"  onclick="onClick(this)" alt="prometheous">
-      <img class="resize"  src="photo_a/ap.jpg"  onclick="onClick(this)" alt="loster">
+    <div class="w3-col m2">  
+      <img src="photo_a/h.jpg" class="resize"  onclick="onClick(this)" alt="Canoeing again">
+      <img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
     </div>
-    <div class="w3-quarter">  
+    <div class="w3-col m2" >  
       <img class="resize" src="photo_a/p.jpg" onclick="onClick(this)" alt="prometheous">
       <img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">
     </div>
-    <div class="w3-quarter">  
+    <div class="w3-col m2" >  
       <img class="resize" src="photo_a/hard.jpg" onclick="onClick(this)" alt="henry">
-      <img class="resize" src="photo_a/c.jpeg" onclick="onClick(this)" alt="coherence">
+      <img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="coherence">
     </div>
-    <div class="w3-quarter">  
+    <div class="w3-col m2" >  
       <img class="resize" src="photo_a/i.jpg" onclick="onClick(this)" alt="innocence">
-      <img class="resize" src="photo_a/moon.jpg" onclick="onClick(this)" alt="moon">
+      <img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">
     </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/moon.jpg" onclick="onClick(this)" alt="innocence">
+      <img class="resize" src="photo_a/para.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+     <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/gremlins.jpg" onclick="onClick(this)" alt="innocence">
+      <img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+    
 
-
-  </div>
+ </div>
 
 
   <div id="left" style="display:none;background-color:blue;" class="city w3-animate-opacity w3-row-padding w3-padding-16 w3-center">
