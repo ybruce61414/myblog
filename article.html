@@ -19,7 +19,7 @@
 <style>
 
 .w3-col img{margin-bottom: -6px; cursor: pointer}
-.w3-col img:hover{opacity: 0.75; transition: 0.3s}
+.w3-col img:hover{opacity: ; transition: 0.3s}
 /*control image size*/
 img.resize{
    width:100%;
@@ -53,7 +53,7 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url('photo/vp.jpg');
-    min-height: 300px;
+    min-height: 310px;
 }
 
 /* Second image (Portfolio) */
@@ -91,11 +91,11 @@ body, html {
         <i class="fa fa-bars"></i>
       </a>
     </li>-->
-    <li class="w3-hide-small w3-right "><a href="#" class="w3-hover-red"><i class="fa fa-search"></i></a></li>
-    <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-red"><i class="fa fa-envelope"></i> CONTACT</a></li>    
-    <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/article.html" class="w3-hover-red"><i></i> ARTICLE</a></li>  
-    <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/" class="w3-hover-red"><i></i> RESEARCH</a></li>
-    <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-red">HOME</a></li>
+    <li class="w3-hide-small w3-right "><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
+    <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-none w3-hover-text-white"><i class="fa fa-envelope"></i> CONTACT</a></li>    
+    <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/article.html" class=" w3-hover-none w3-hover-text-white"><i></i> ARTICLE</a></li>  
+    <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a></li>
+    <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-none w3-hover-text-white">HOME</a></li>
     
   </ul>
 </div>
@@ -118,33 +118,56 @@ body, html {
 </ul>
 
 
-<div id="Fade" style="display:none;background-color:black;" class="city w3-animate-opacity w3-row">
+<div id="Fade" style="background-color:white;" class="city w3-animate-opacity w3-row">
 
+<div class="w3-navbar font11 w3-white w3-center w3-margin-top w3-xlarge">action</div>
+    
     <div class="w3-col m2">  
       <img src="photo_a/h.jpg" class="resize"  onclick="onClick(this)" alt="Canoeing again">
-      <img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-    </div>
+      <!--<img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="">-->
+    </div>    
     <div class="w3-col m2" >  
       <img class="resize" src="photo_a/p.jpg" onclick="onClick(this)" alt="prometheous">
-      <img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">
+      <!--<img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">-->
     </div>
     <div class="w3-col m2" >  
       <img class="resize" src="photo_a/hard.jpg" onclick="onClick(this)" alt="henry">
-      <img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="coherence">
+      <!--<img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="coherence">-->
     </div>
     <div class="w3-col m2" >  
       <img class="resize" src="photo_a/i.jpg" onclick="onClick(this)" alt="innocence">
-      <img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">
+      <!--<img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">-->
     </div>
     <div class="w3-col m2" >  
       <img class="resize" src="photo_a/moon.jpg" onclick="onClick(this)" alt="innocence">
-      <img class="resize" src="photo_a/para.jpg" onclick="onClick(this)" alt="moon">
+      <!--<img class="resize" src="photo_a/para.jpg" onclick="onClick(this)" alt="moon">-->
     </div>
      <div class="w3-col m2" >  
       <img class="resize" src="photo_a/gremlins.jpg" onclick="onClick(this)" alt="innocence">
-      <img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">
+      <!--<img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">-->
     </div>
     
+    <div class="w3-row">
+    <div class="font11 w3-col m12 w3-center w3-white w3-xlarge w3-margin-top">black humor</div>
+    </div>
+<div class="w3-col m2"> 
+      <img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="">
+    </div>    
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="coherence">
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/para.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+     <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">
+    </div>
 
  </div>
 
@@ -207,7 +230,10 @@ body, html {
     </div>
 
   </div>
-
+<footer class="font33 w3-container w3-black w3-center w3-section">
+  <p></p>
+  <p>Powered by Bruce</p>
+</footer>
 
   <script>
 function openLink(evt, animName) {
