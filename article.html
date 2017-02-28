@@ -17,12 +17,11 @@
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
 
 <style>
-
 .w3-col img{margin-bottom: -6px; cursor: pointer}
-.w3-col img:hover{opacity: ; transition: 0.3s}
+.w3-col img:hover{opacity:0.9; transition: 0.3s}
 /*control image size*/
 img.resize{
-   width:100%;
+   width:100.8%;
    height:324px;
 }
 .myMOUSE{ cursor: pointer; }
@@ -45,15 +44,16 @@ body, html {
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('photo/vp.jpg');
-    min-height: 310px;
+    background-image: url('photo_a/ar2.jpg');
+    background-position:  50% 65%;
+    min-height: 420px;
 }
 
 /* Second image (Portfolio) */
@@ -78,20 +78,19 @@ body, html {
     }
 }
 </style>
-<header class="font33 w3-top w3-xlarge w3-padding-0">
-  <span class="w3-left w3-padding">Viola's Blog</span>
-  </header>
+<header>
+</header>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="font33 w3-top" style="font-weight: bold;font-size: 18px">
+  <ul class="w3-navbar w3-left" id="myNavbar">
+  <li class="w3-hide-small w3-left w3-xlarge"><a href="#" class="w3-hover-none w3-hover-text-white"><i></i>Viola's Blog</a></li>
+  </ul>
+  
   <ul class="w3-navbar w3-right" id="myNavbar">
-    <!--<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-      <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-    </li>-->
-    <li class="w3-hide-small w3-right "><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
+    
+   <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
     <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-none w3-hover-text-white"><i class="fa fa-envelope"></i> CONTACT</a></li>    
     <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/article.html" class=" w3-hover-none w3-hover-text-white"><i></i> ARTICLE</a></li>  
     <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a></li>
@@ -109,22 +108,23 @@ body, html {
   </div>
 </div>
 
-<ul class="w3-navbar font11 w3-black w3-center w3-xlarge">
+<!--movie review/miscellany/tutorial note-->
+<ul class="w3-navbar font11 w3-black w3-center w3-large">
   <li style="width:25%" class="w3-hide-small">&nbsp;</li>
   <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'Fade')">/ MOVIE REVIEW</a></li>
   <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'left')">/ MISCELLANY</a></li>
   <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'last')">/ TUTORIAL NOTE</a></li>
   <li style="width:25%"" class="w3-hide-small">&nbsp;</li>
 </ul>
-
+<script src="js/article1.js"></script>
 
 <div id="Fade" style="background-color:white;" class="city w3-animate-opacity w3-row">
 
-<div class="w3-navbar font11 w3-white w3-center w3-margin-top w3-xlarge">action</div>
+<div class="w3-navbar font11 w3-white w3-center w3-large w3-margin-top">dark si-fi</div>  
     
     <div class="w3-col m2">  
       <img src="photo_a/h.jpg" class="resize"  onclick="onClick(this)" alt="Canoeing again">
-      <!--<img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="">-->
+      <!--<img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="xx">-->
     </div>    
     <div class="w3-col m2" >  
       <img class="resize" src="photo_a/p.jpg" onclick="onClick(this)" alt="prometheous">
@@ -148,7 +148,7 @@ body, html {
     </div>
     
     <div class="w3-row">
-    <div class="font11 w3-col m12 w3-center w3-white w3-xlarge w3-margin-top">black humor</div>
+    <div class="font11 w3-col m12 w3-center w3-white w3-large w3-margin-top">black humor</div>
     </div>
 <div class="w3-col m2"> 
       <img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="">
@@ -230,26 +230,9 @@ body, html {
     </div>
 
   </div>
-<footer class="font33 w3-container w3-black w3-center w3-section">
-  <p></p>
-  <p>Powered by Bruce</p>
+<footer class="font11 w3-container w3-black w3-center w3-margin-top">
+  <p class="w3-xlarge w3-padding-0">ALL RIGHTS RESERVED · Powered by Bruce 2017</p>
 </footer>
-
-  <script>
-function openLink(evt, animName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(animName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
 
 
 
