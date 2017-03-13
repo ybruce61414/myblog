@@ -19,10 +19,11 @@
 <style>
 .w3-col img{margin-bottom: -6px; cursor: pointer}
 .w3-col img:hover{opacity:0.9; transition: 0.3s}
-/*control image size*/
+/*control image size 324px*/
 img.resize{
-   width:100.8%;
-   height:324px;
+   width:100%;
+   height: 324px;
+
 }
 .myMOUSE{ cursor: pointer; }
 
@@ -32,6 +33,8 @@ body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
+  
+
 }
 /*font choose*/
 .font11{font-family: 'Amatic SC', cursive;
@@ -51,9 +54,9 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('photo_a/ar2.jpg');
-    background-position:  50% 65%;
-    min-height: 420px;
+    background-image: url('photo_cover/ar2.jpg');
+    background-position:  50% 40%;
+    min-height: 480px;
 }
 
 /* Second image (Portfolio) */
@@ -79,22 +82,35 @@ body, html {
 }
 </style>
 <header>
+
 </header>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="font33 w3-top" style="font-weight: bold;font-size: 18px">
-  <ul class="w3-navbar w3-left" id="myNavbar">
-  <li class="w3-hide-small w3-left w3-xlarge"><a href="#" class="w3-hover-none w3-hover-text-white"><i></i>Viola's Blog</a></li>
-  </ul>
-  
-  <ul class="w3-navbar w3-right" id="myNavbar">
+<div class="font33 w3-top w3-padding-0" style="font-weight: bold;font-size: 18px;background-color:black;opacity:0.9;">
+<ul class="w3-navbar w3-left w3-large">
+    <li class="w3-hide-small w3-left"><a href="#" class="w3-hover-none w3-hover-text-white">Viola's Blog</a></li>
+</ul>
+  <ul class="w3-navbar w3-right">
     
    <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
     <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-none w3-hover-text-white"><i class="fa fa-envelope"></i> CONTACT</a></li>    
-    <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/article.html" class=" w3-hover-none w3-hover-text-white"><i></i> ARTICLE</a></li>  
-    <li class="w3-hide-small  w3-right"><a href="https://ybruce61414.github.io/myblog/" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a></li>
-    <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-none w3-hover-text-white">HOME</a></li>
+    <!--scroll list dropdown-->
+    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class=" w3-hover-none w3-hover-text-white"> ARTICLE</a>
+    <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
+        <a href="https://ybruce61414.github.io/myblog/article.html" class="w3-hover-none w3-hover-text-red">Movie Review</a>
+        <a href="#" class="w3-hover-none w3-hover-text-red">Musical Note</a>
+        <a href="#" class="w3-hover-none w3-hover-text-red">Miscellany</a>
+      </div>  
+    </li>  
+    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a>
+    <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
+        <a href="https://ybruce61414.github.io/myblog/" class="w3-hover-none w3-hover-text-red">Current Stage</a>
+        <a href="#" class="w3-hover-none w3-hover-text-red">Tutorial Note</a>
+        
+      </div>  
+    </li>
+    <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-none w3-hover-text-white">ABOUT</a></li>
     
   </ul>
 </div>
@@ -102,77 +118,119 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container  font" id="home">
   <div class="w3-display-middle w3-padding-xxlarge w3-wide w3-text-light-grey w3-center">
-    <span class="font33 w3-hide-medium w3-hide-small" style="line-height:140%;font-size: 80px">Article</span>
+    <span class="font33 w3-hide-medium w3-hide-small" style="line-height:140%;font-size: 80px">Movie Review</span>
     
     <span class="font33 w3-hide-medium w3-hide-small w3-large" style="white-space:nowrap">MOVIE REVIEW/ MISCELLANY/ TUTORIAL NOTE </span>
   </div>
 </div>
 
 <!--movie review/miscellany/tutorial note-->
-<ul class="w3-navbar font11 w3-black w3-center w3-large">
+<ul class="w3-navbar font11 w3-black w3-center " style="font-size:18px;">
   <li style="width:25%" class="w3-hide-small">&nbsp;</li>
-  <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'Fade')">/ MOVIE REVIEW</a></li>
-  <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'left')">/ MISCELLANY</a></li>
-  <li style="width:16.66%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'last')">/ TUTORIAL NOTE</a></li>
-  <li style="width:25%"" class="w3-hide-small">&nbsp;</li>
+  <li style="width:12.5%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'sifi')">/ si-fi</a></li>
+  <li style="width:12.5%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'blackhumor')">/ black humor</a></li>
+  <li style="width:12.5%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'thriller')">/ thriller & cult</a></li>
+  <li style="width:12.5%"><a href="javascript:void(0)" class="tablink myMOUSE w3-hover-red" onclick="openLink(event, 'last')">/ animation</a></li>
+  <li style="width:25%" class="w3-hide-small">&nbsp;</li>
 </ul>
 <script src="js/article1.js"></script>
 
-<div id="Fade" style="background-color:white;" class="city w3-animate-opacity w3-row">
-
-<div class="w3-navbar font11 w3-white w3-center w3-large w3-margin-top">dark si-fi</div>  
-    
-    <div class="w3-col m2">  
-      <img src="photo_a/h.jpg" class="resize"  onclick="onClick(this)" alt="Canoeing again">
-      <!--<img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="xx">-->
+<div id="sifi" style="background-color:black;" class="city w3-animate-opacity w3-row">
+     
+    <!--first row--> 
+    <div class="w3-col m2" style="max-height:">  
+      <img src="photo_list/i.jpg" class="resize"  onclick="onClick(this)" alt="Canoeing again">
+      <!--<img src="photo_a/cube.jpg" class="resize" onclick="onClick(this)" alt="xx">-->
     </div>    
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/p.jpg" onclick="onClick(this)" alt="prometheous">
+    <div class="w3-col m2" style="max-height:">  
+      <img class="resize" src="photo_list/p.jpg" onclick="onClick(this)" alt="prometheous">
       <!--<img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">-->
     </div>
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/hard.jpg" onclick="onClick(this)" alt="henry">
-      <!--<img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="coherence">-->
+    <div class="w3-col m2" style="max-height:">  
+      <img class="resize" src="photo_list/gravity.jpg" onclick="onClick(this)" alt="henry">
+      <!--<img class="resize" src="photo_a/cruel.jpg" onclick="onClick(this)" alt="coherence">-->
     </div>
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/i.jpg" onclick="onClick(this)" alt="innocence">
-      <!--<img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">-->
+    <div class="w3-col m2" style="max-height:">  
+      <img class="resize" src="photo_list/arrival.jpg" onclick="onClick(this)" alt="innocence">
+      <!--<img class="resize" src="photo_a/undertheskin.jpg" onclick="onClick(this)" alt="moon">-->
     </div>
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/moon.jpg" onclick="onClick(this)" alt="innocence">
+    <div class="w3-col m2" style="max-height:">  
+      <img class="resize" src="photo_list/moon.jpg" onclick="onClick(this)" alt="innocence">
       <!--<img class="resize" src="photo_a/para.jpg" onclick="onClick(this)" alt="moon">-->
     </div>
-     <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/gremlins.jpg" onclick="onClick(this)" alt="innocence">
-      <!--<img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">-->
+     <div class="w3-col m2" style="max-height:">  
+      <img class="resize" src="photo_list/oblivion.jpg" onclick="onClick(this)" alt="innocence">
+      <!--<img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="moon">-->
     </div>
     
-    <div class="w3-row">
-    <div class="font11 w3-col m12 w3-center w3-white w3-large w3-margin-top">black humor</div>
-    </div>
-<div class="w3-col m2"> 
-      <img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="">
-    </div>    
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">
-    </div>
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="coherence">
-    </div>
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">
-    </div>
-    <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/para.jpg" onclick="onClick(this)" alt="moon">
-    </div>
-     <div class="w3-col m2" >  
-      <img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">
-    </div>
+    <!--second row-->
+    
+    
+
 
  </div>
 
 
-  <div id="left" style="display:none;background-color:blue;" class="city w3-animate-opacity w3-row-padding w3-padding-16 w3-center">
+  <div id="blackhumor" style="display:none;background-color:black;" class="city w3-animate-opacity w3-row">
+
+     <div class="w3-col m2">  
+      <img src="photo_list/fightclub.jpg" class="resize"  onclick="onClick(this)" alt="Canoeing again">
+      <!--<img src="photo_a/two.jpg" class="resize" onclick="onClick(this)" alt="xx">-->
+    </div>    
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_list/inglourious.jpg" onclick="onClick(this)" alt="prometheous">
+      <!--<img class="resize" src="photo_a/ap.jpg" onclick="onClick(this)" alt="ex">-->
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_list/fargo.jpg" onclick="onClick(this)" alt="henry">
+      <!--<img class="resize" src="photo_a/hard.jpg" onclick="onClick(this)" alt="coherence">-->
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_list/lobster.jpg" onclick="onClick(this)" alt="innocence">
+      <!--<img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">-->
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_list/two.jpg" onclick="onClick(this)" alt="innocence">
+      <!--<img class="resize" src="photo_a/snatch.jpg" onclick="onClick(this)" alt="moon">-->
+    </div>
+     <div class="w3-col m2" >  
+      <img class="resize" src="photo_list/ap.jpg" onclick="onClick(this)" alt="innocence">
+      <!--<img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">-->
+    </div>
+
+  </div>
+
+  <div id="thriller" style="display:none;background-color:black;" class="city w3-animate-opacity w3-row">
+
+     <div class="w3-col m2">  
+      <img src="photo_a/h.jpg" class="resize"  onclick="onClick(this)" alt="Canoeing again">
+      <img src="photo_a/ap.jpg" class="resize" onclick="onClick(this)" alt="xx">
+    </div>    
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/p.jpg" onclick="onClick(this)" alt="prometheous">
+      <img class="resize" src="photo_a/ex.jpg" onclick="onClick(this)" alt="ex">
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/hard.jpg" onclick="onClick(this)" alt="henry">
+      <img class="resize" src="photo_a/c.jpg" onclick="onClick(this)" alt="coherence">
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/i.jpg" onclick="onClick(this)" alt="innocence">
+      <img class="resize" src="photo_a/cons.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+    <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/moon.jpg" onclick="onClick(this)" alt="innocence">
+      <img class="resize" src="photo_a/para.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+     <div class="w3-col m2" >  
+      <img class="resize" src="photo_a/gremlins.jpg" onclick="onClick(this)" alt="innocence">
+      <img class="resize" src="photo_a/two.jpg" onclick="onClick(this)" alt="moon">
+    </div>
+
+  </div>
+
+
+  <div id="last" style="display:none;background-color:white;" class="city w3-animate-opacity w3-row">
 
     <div class="w3-quarter">
       <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
@@ -200,38 +258,11 @@ body, html {
     </div>
 
   </div>
-
-
-  <div id="last" style="display:none;background-color:white;" class="city w3-animate-opacity w3-row-padding w3-padding-16 w3-center">
-
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-
-    <div class="w3-quarter">
-      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
-      <h3>Let Me Tell You About This Steak</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-
-    <div class="w3-quarter">
-      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
-      <h3>Cherries, interrupted</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-
-    <div class="w3-quarter">
-      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-
-  </div>
-<footer class="font11 w3-container w3-black w3-center w3-margin-top">
-  <p class="w3-xlarge w3-padding-0">ALL RIGHTS RESERVED · Powered by Bruce 2017</p>
+<script src="js/article1_dropdown.js"></script>  
+  
+</body>
+<footer class="font11 w3-container w3-black w3-center w3-margin-t0">
+  <p class="w3-xlarge w3-padding-0">ALL RIGHTS RESERVED · Powered by bruce 2017</p>
 </footer>
 
 

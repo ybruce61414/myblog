@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>Movie Review: Arrival</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css1/main.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--fonts-->
+<link href="https://fonts.googleapis.com/earlyaccess/cwtexming.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Libre+Baskerville" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans+Condensed:300" rel="stylesheet">
+
+<!--mathjax-->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
+
+<style>
+.w3-col img{margin-bottom: -6px; cursor: pointer}
+.w3-col img:hover{opacity:0.9; transition: 0.3s}
+/*control image size*/
+img.resize{
+   width:780px;
+   height:324px;
+}
+.myMOUSE{ cursor: pointer; }
+
+body,h1,h2,h3,h4,h5,h6 {/*font-family: 'Lora', serif;*/
+}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+  
+
+}
+/*font choose*/
+.font11{font-family: 'Amatic SC', cursive;
+}
+.font22{
+  font-family: 'Fredericka the Great', cursive;
+}
+.font33{font-family: 'Open Sans Condensed', sans-serif;
+}
+.fontx{font-family: 'cwTeXMing', serif;
+
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: ;
+}
+
+/*padding */
+.padding{ padding-top: 32px;
+          padding-right: 90px;
+          padding-bottom: 32px;
+          padding-left: 90px;
+
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('photo_arrival/arrival4.jpg');
+    background-position: 50% -200%;
+    min-height: 450px;
+
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('photo/');
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("photo/");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 750px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<header>
+
+</header>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="font33 w3-top w3-padding-0" style="font-weight: bold;font-size: 18px;background-color:black;opacity:0.9;">
+<ul class="w3-navbar w3-left w3-large">
+    <li class="w3-hide-small w3-left"><a href="#" class="w3-hover-none w3-hover-text-white">Viola's Blog</a></li>
+</ul>
+  <ul class="w3-navbar w3-right">
+    
+   <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
+    <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-none w3-hover-text-white"><i class="fa fa-envelope"></i> CONTACT</a></li>    
+    <!--scroll list dropdown-->
+    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class=" w3-hover-none w3-hover-text-white"> ARTICLE</a>
+    <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
+        <a href="https://ybruce61414.github.io/myblog/article.html" class="w3-hover-none w3-hover-text-red">Movie Review</a>
+        <a href="#" class="w3-hover-none w3-hover-text-red">Musical Note</a>
+        <a href="#" class="w3-hover-none w3-hover-text-red">Miscellany</a>
+      </div>  
+    </li>  
+    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a>
+    <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
+        <a href="https://ybruce61414.github.io/myblog/" class="w3-hover-none w3-hover-text-red">Current Stage</a>
+        <a href="#" class="w3-hover-none w3-hover-text-red">Tutorial Note</a>
+        
+      </div>  
+    </li>
+    <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-none w3-hover-text-white">ABOUT</a></li>
+    
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container  font" id="home">
+  <div class="w3-display-middle w3-padding-xxlarge w3-wide w3-text-light-grey w3-center">
+    <span class="font33 w3-hide-medium w3-hide-small" style="line-height:140%;font-size: 80px">Arrival</span></br>
+    
+    <span class="font33 w3-hide-medium w3-hide-small w3-large" style="white-space:nowrap">影評：⟪異星入境⟫</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container padding" id="about">
+<p class="font33" style="font-size:27px;">加拿大導演丹尼維勒納夫(Denis Villeneuve)執導科幻驚悚電影。</br>Sapir–Whorf hypothesis、語言相對論，Linguistic relativity:人類的思考模式受到其使用語言的影響</br></p><hr>
+<img src="photo_arrival/arrival1.jpg" style="width:800px; height: 500px;>
+  <h3 class="font33" style="font-weight:bold ;font-size: 40px"></h3>
+  <p class="w3-large w3-text-grey font33" style="font-size:18px"> 
+ 神秘的太空船在全球降落現身，優秀的語言學家露易絲班克思 (艾美亞當斯 飾) 帶領一支菁英團隊聯手展開調查研究。就在人類徘徊在世界大戰邊緣之際，班克思帶領著團隊與時間賽跑，試圖尋求解答，此舉卻有可能讓自己的生命遭受威脅，乃至人性也可能被泯滅殆盡。傑瑞米雷納及奧斯卡佛瑞斯惠特克也在該片參與演出，在2016年威尼斯影展全球首映、多倫多國際影展及倫敦影展皆獲得一致好評，眾多媒體影評列為奧斯卡大熱門。
+  <br/> &nbsp;&nbsp;&nbsp;&nbsp; </p>
+  
+  <hr>
+  
+
+  <h3 class="font11" style="font-weight: bold;font-size: 40px">conclusion</h3>
+  <!--<p class="w3-center"><em>plasmonics</em></p>-->
+  <p class="w3-large w3-text-grey font33" style="font-weight:; font-size:18px">神秘的太空船在全球降落現身，優秀的語言學家露易絲班克思 (艾美亞當斯 飾) 帶領一支菁英團隊聯手展開調查研究。就在人類徘徊在世界大戰邊緣之際，班克思帶領著團隊與時間賽跑，試圖尋求解答，此舉卻有可能讓自己的生命遭受威脅，乃至人性也可能被泯滅殆盡。傑瑞米雷納及奧斯卡佛瑞斯惠特克也在該片參與演出，在2016年威尼斯影展全球首映、多倫多國際影展及倫敦影展皆獲得一致好評，眾多媒體影評列為奧斯卡大熱門。 <br/> &nbsp;&nbsp;&nbsp;&nbsp;  </p>
+
+</div>
+
+
+<script src="js/article1_dropdown.js"></script>  
+  
+</body>
+<footer class="font11 w3-container w3-black w3-center w3-padding-64 ">
+  <p class="w3-xlarge w3-padding-0">ALL RIGHTS RESERVED · Powered by bruce 2017</p>
+</footer>
+</html>
+
+
+  
