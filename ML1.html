@@ -80,21 +80,21 @@ body, html {
    <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
     <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-none w3-hover-text-white"><i class="fa fa-envelope"></i> CONTACT</a></li>    
     <!--scroll list dropdown-->
-    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="https://ybruce61414.github.io/myblog/article.html" class=" w3-hover-none w3-hover-text-white"> ARTICLE</a>
+    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class=" w3-hover-none w3-hover-text-white"> ARTICLE</a>
     <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
         <a href="#" class="w3-hover-none w3-hover-text-red">Movie Review</a>
         <a href="#" class="w3-hover-none w3-hover-text-red">Musical Note</a>
         <a href="#" class="w3-hover-none w3-hover-text-red">Miscellany</a>
       </div>  
     </li>  
-    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="https://ybruce61414.github.io/myblog/" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a>
+    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a>
     <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
         <a href="#" class="w3-hover-none w3-hover-text-red">Current Stage</a>
         <a href="#" class="w3-hover-none w3-hover-text-red">Tutorial Note</a>
         
       </div>  
     </li>
-    <li class="w3-right-align  w3-right"><a href="https://ybruce61414.github.io/alesandra/" class="w3-hover-none w3-hover-text-white">ABOUT</a></li>
+    <li class="w3-right-align  w3-right"><a href="#" class="w3-hover-none w3-hover-text-white">ABOUT</a></li>
     
   </ul>
 </div>
@@ -128,13 +128,16 @@ body, html {
           廣義來說，機器學習是一門使計算機能自動學習，而不需要編程的研究領域。</br>光從字面上的理解是非常抽象且曖昧不明。什麼是自動學習？什麼又是不需要編程？</br>明確來說，機器學習就是從大量的數據中，依目的選定適當學習方法下，自動尋找出數據內潛在的規律。憑這些規律建立自我判斷能力，如高準度的預測或影像,聲紋的辨識等。簡單來說，就是讓機器學習現有的資料，然後預測新的資料。</p>
           </br>
           <h3 class="font33 w3-center">2.為什麼機器學習？</h3>
-          <p class="font33">試想如果要寫一個樹的辨識系統，我們要如何寫？直觀的方法我們可能會列出一連串的規則，告訴機器什麼是“樹”，例如樹幹形狀,樹皮上的紋路,葉子的顏色等。那好巧不巧今天有一棵你沒看過的樹，剛好也不在規則上，那這個樹的辨識系統就無法分辨了。這時候，就可以使用機器學習，教它學會釣魚（自己找出辨識樹的方法），而不是直接給它魚吃（直接告訴它什麼是樹）。以上這個例子，大致上可以歸納出機器學習的使用時機：</br>1.資料存在某種規律(underlying pattern)
+          <p class="font33">試想如果要寫一個樹的辨識系統，我們要如何寫？直觀的方法我們可能會列出一連串的規則，告訴機器什麼是“樹”，例如樹幹形狀,樹皮上的紋路,葉子的顏色等。那好巧不巧今天有一棵你沒看過的樹，剛好也不在規則上，那這個樹的辨識系統就無法分辨了。這時候，就可以使用機器學習。教它學會釣魚（自己找出辨識樹的方法），而不是直接給它魚吃（直接告訴它什麼是樹）。以上這個例子，大致上可以歸納出機器學習的使用時機：</br>1.資料中存在某種潛藏的規律(underlying pattern)
                      </br>2.目標函數(target function)無法直截了當被定義
                      </p>
           </br>           
 
           <h3 class="font33 w3-center">3.如何機器學習？</h3>
-          <p><strong></strong> </p>           
+          <p class="font33">我們舉銀行核發信用卡為例，利用機器學習決定是否核發信用卡給客戶。首先，x跟y代表銀行裡的歷史紀錄，x是客戶申請表上的資訊，通常是一連串客戶的特徵，所以又叫feature space ;而y是代表是否有發卡。我們的目的就是找到一個“函式”（target function)，當丟進客戶的特徵(x)後，就能判別是否發卡(y)
+          ，但這個函式無法直接被定義或被找到的。接下來，機器會用這些客戶的資料D，算出可能的解g，我們稱之為Hypothesis，這個解可能是這個人穩定工作兩年以上就發卡，或十年內無負債就發卡等， 所以我們定義這些可能是標函數的解集合為Hypothesis Set，而Learning Algorithm就會從Hypothesis Set中挑出一個與數據最相符的解，當作我們最後的target function來判斷是否發卡。而這個
+          A跟H就是機器學習裡的learning model.</br>
+          </p>           
 
         <img src="photo_tutorial/ml1.jpg" alt="" style="width:100%" class="">
 
