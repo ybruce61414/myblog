@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <title>machine learning1</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css1/main.css">
 
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -17,7 +18,6 @@
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
 
-
 <style>
 
 p{font-size:18px;line-height: 1.6;}
@@ -30,9 +30,9 @@ body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
-  
+  }
 
-}
+* {box-sizing: border-box;}  
 /*font choose*/
 .font11{font-family: 'Amatic SC', cursive;
 }
@@ -49,75 +49,60 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 
-     background-image: url('photo_tutorial/cover4.jpg');
+    background-image: url('photo_tutorial/cover4.jpg');
     background-position:  50% 20%;
     min-height: 440px;
    
 }
 
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1{
-        background-attachment: scroll;
-    }
+@media only screen and (max-device-width: 375px) {
+    body{font-size: px;}
+    div{padding:5px;}
+    p{font-size: 5px}
 }
 </style>
-<header>
 
-</header>
-<body style="background-color:">
+<body>
 
 <!-- Navbar (sit on top) -->
 <div class="font33 w3-top w3-padding-0" style="font-weight: bold;font-size: 18px;background-color:black;opacity:0.9;">
 <ul class="w3-navbar w3-left w3-large">
-    <li class="w3-hide-small w3-left"><a href="#" class="w3-hover-none w3-hover-text-white">Viola's Blog</a></li>
+    <li class="w3-left"><a href="#" class="w3-hover-none w3-hover-text-white">Viola's Blog</a></li>
 </ul>
+  
   <ul class="w3-navbar w3-right">
-    
-   <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
+     <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
     <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-none w3-hover-text-white"><i class="fa fa-envelope"></i> CONTACT</a></li>    
-    <!--scroll list dropdown-->
-    <li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class=" w3-hover-none w3-hover-text-white"> ARTICLE</a>
+    <li class="w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class=" w3-hover-none w3-hover-text-white"> ARTICLE</a>
     <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
         <a href="#" class="w3-hover-none w3-hover-text-red">Tutorial Note</a>
         <a href="#" class="w3-hover-none w3-hover-text-red">Movie Review</a>
         <a href="#" class="w3-hover-none w3-hover-text-red">Research</a>
       </div>  
     </li>  
-    <!--<li class="w3-hide-small  w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class="w3-hover-none w3-hover-text-white"><i></i> RESEARCH</a>
-    <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
-        <a href="#" class="w3-hover-none w3-hover-text-red">Current Stage</a>
-        <a href="#" class="w3-hover-none w3-hover-text-red">Tutorial Note</a>
-        
-      </div>  
-    </li>-->
-    <li class="w3-right-align  w3-right"><a href="#" class="w3-hover-none w3-hover-text-white">ABOUT</a></li>
+    <li class="w3-right-align  w3-right w3-hide-small"><a href="#" class="w3-hover-none w3-hover-text-white">ABOUT</a></li>
     
   </ul>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- context title -->
 <div class="bgimg-1 w3-display-container  font" id="home">
   <div class="w3-display-middle w3-padding-xxlarge w3-wide w3-text-light-grey w3-center">
-    <span class="font33 w3-hide-medium w3-hide-small" style="line-height:140%;font-size: 80px">Tutorial Note</span>
+    <span class="font33" style="line-height:140%;font-size: 80px">Tutorial Note</span>
     
-    <span class="font33 w3-hide-medium w3-hide-small w3-large" style="white-space:nowrap">Machine Learning Foundations </span>
+    <span class="font33 w3-hide-medium  w3-large" style="white-space:nowrap">Machine Learning Foundations </span>
   </div>
 </div>
 
-<!--content-->
+<!--content -->
 <div class="w3-row w3-padding" style="background-color:#262626;">
 
-    <!-- Blog entries -->
-    <div class="w3-col" style="width:15%">&nbsp;</div>
     
-    <div class="w3-col s12 " style=";width:70%;background-color:white;margin-top: 50px;">
+    <div class="w3-col l2">&nbsp;</div>
     
-      <!-- Blog entry -->
+    <div class="w3-col l8" style="background-color:white;margin-top: 50px;">
+    <!-- Blog entry -->
       <div class="w3-container w3-margin w3-padding-jumbo">
         <div class="w3-center">
           <h1 class="font33">機器學習(Machine Learning)1：Introduction</h1>
@@ -147,9 +132,9 @@ body, html {
           以上這個式子就是我們要解的目標函數(target function)的“表示形式”，這個表現形式中所有可能的解稱為hypothesis set，而我們要求的f就是下圖矩形的區域，接下來利用演算法從hypothesis set中找到最適當的解g，就是找到一組最適合參數(p1,p2,e1,e2)，來逼近我們的f。然而真實情況下，這個f我們並不知道，我們只能從已知的資料D中，去找出離這組資D料失誤最小的那組參數，最後當作目標函數(target function)來使用。</br>
 
 
-          <img src="photo_tutorial/ml2.jpg" alt="" style="width:55%" class="w3-left">          
+          <img src="photo_tutorial/ml2.jpg" alt="" style="width:50%" >          
           
-          </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+          </br>
           </p> 
 
           <h3 class="font33 w3-center">4.總結</h3>
@@ -158,9 +143,9 @@ body, html {
           2.根據我們的目的，利用萃取出資料的特徵x，來建立目標函數(target function)的模型，而目標函數的解集合就是hypothesis set。</br>
           3.再利用演算法找出目標函數學習模型的參數，就是從hypothesis set中挑出最符合資料D的解，最後讓這個解當作我們的f。</p>  
 
-        <img src="photo_tutorial/ml1.jpg" alt="" style="width:100%" class="">
+        <img src="photo_tutorial/ml1.jpg" alt="" style="width:100%" >
 
-        <div class="w3-justify">
+        <div class="">
           <!--<img src="/w3images/girl_hat.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-12">-->
           <h3 class="font33 w3-center"></h3>
           <p><strong></strong> </p>
@@ -177,7 +162,7 @@ body, html {
     </div>
 
     
- <div class="w3-col" style="width:15%">&nbsp;</div>
+ <div class="w3-col l2">&nbsp;</div>
 </div>
 </body>  
 
