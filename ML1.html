@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="css1/main.css">
-
 <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -24,6 +23,9 @@
 nav{font-weight:bold;font-size: 18px}
 
 .spantitle{line-height:140%;font-size: 80px;}
+.content{background-color:white; margin-top:50px;}
+.contentpadding1{padding: 8px 16px 8px;}
+.contentpadding2{padding: 90px 90px 75px;}
 
 p{font-size:18px;line-height: 1.6;}
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Lora', serif;
@@ -63,21 +65,22 @@ body, html {
     body{box-sizing: border-box;margin: 0}
     .spantitle{line-height:10%;font-size: 50px;}
     .bgimg-1 {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto;
+    display: none;
 
     background-image: url('photo_tutorial/cover4.jpg');
     background-position:  50% 20%;
     min-height: 390px;
    
 }
+    .content{ background-color:white;margin-top: 5px; }
+    .contentpadding1{padding: 5px 8px 0px;}
+    .contentpadding2{padding: 10px 5px 10px;}
     div{box-sizing: border-box;}
     p{font-size: 6px}
     h1{font-size:12px }
     h3{font-size: 8px}
     h5{font-size: 7px}
-
+    
     
 }
 </style>
@@ -86,15 +89,15 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <nav>
-<div class="font33 w3-top w3-padding-0" style="background-color:black;opacity:0.9;">
+<div class="font33 w3-top" style="background-color:black;opacity:0.9;">
 <ul class="w3-navbar w3-left w3-large">
-    <li class="w3-left"><a href="#" class="w3-hover-none w3-hover-text-white">Viola's Blog</a></li>
+    <li class="w3-left"><a href="#" class="w3-hover-none w3-hover-text-white w3-mobile ">Viola's Blog</a></li>
 </ul>
   
-  <ul class="w3-navbar w3-right">
+<ul class="w3-navbar w3-right">
      <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-none w3-hover-text-white"><i class="fa fa-search"></i></a></li>
     <li class="w3-hide-small  w3-right"><a href="#contact" class="w3-hover-none w3-hover-text-white"><i class="fa fa-envelope"></i> CONTACT</a></li>    
-    <li class="w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class=" w3-hover-none w3-hover-text-white"> ARTICLE</a>
+    <li class="w3-right w3-dropdown-hover w3-hover-none w3-hover-text-white"><a href="#" class=" w3-hover-none w3-hover-text-white w3-mobile"> ARTICLE</a>
     <div class="w3-dropdown-content w3-animate-opacity w3-black w3-card-4 ">
         <a href="#" class="w3-hover-none w3-hover-text-red">Tutorial Note</a>
         <a href="#" class="w3-hover-none w3-hover-text-red">Movie Review</a>
@@ -102,28 +105,27 @@ body, html {
       </div>  
     </li>  
     <li class="w3-right-align  w3-right w3-hide-small"><a href="#" class="w3-hover-none w3-hover-text-white">ABOUT</a></li>
-    
   </ul>
 </div>
 </nav>
 
 <!-- context title -->
-<div class="bgimg-1 w3-display-container">
+<header class="bgimg-1 w3-display-container">
   <div class="w3-display-middle w3-padding-xxlarge w3-wide w3-text-light-grey w3-center">
     <span class="font33 spantitle">Tutorial Note</span>
     <span class="font33 w3-hide-medium  w3-large" style="white-space:nowrap">Machine Learning Foundations </span>
   </div>
-</div>
+</header>
 
 <!--content -->
-<div class="w3-row w3-padding" style="background-color:#262626;">
+<div class="w3-row contentpadding1" style="background-color:#262626;">
 
     
     <div class="w3-col l2">&nbsp;</div>
     
-    <div class="w3-col l8" style="background-color:white;margin-top: 50px;">
+    <div class="w3-col l8 s12 content">
     <!-- Blog entry -->
-      <div class="w3-container w3-margin w3-padding-jumbo">
+      <div class="w3-container w3-margin contentpadding2">
         <div class="w3-center">
           <h1 class="font33">機器學習(Machine Learning)1：Introduction</h1>
           <h5 class="font33">Posted on <span class="w3-opacity">March 21, 2017</span></h5>
