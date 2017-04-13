@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>Viola&ndash;Blog&ndash;ML1</title>
+    
+    
+   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
+
+     <!--font-->
+     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans+Condensed:300" rel="stylesheet">
+     
+     <!--font end-->
+</head>
+<style>
+.font11{font-family: 'Amatic SC', cursive;
+}
+.font22{font-family: 'Open Sans Condensed', sans-serif;
+}
+.p-center{
+ text-align: center;   
+}
+.p-footer{
+    color: #cccccc;
+}
+</style>
+<body>
+
+
+
+
+
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header font22">
+            <h1 class="brand-title">Viola's Blog</h1>
+            <h2 class="brand-tagline">Learning Note</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button navbutton" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button navbutton" href="http://yuilibrary.com">YUI Library</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class=""></h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="python" class="post-avatar" src="img/common/ml.png">
+                        <h2 class="post-title p-center font22" >機器學習(Machine Learning)1：Introduction</h2>
+                        <h1 class="content-subhead p-center font22">MARCH 21,2017</h1>
+                        
+                        <p class="post-meta font22">
+                        
+                        </p>
+                    </header>
+
+                    <div class="post-description font22">
+                     <h3 class="p-center">1.什麼是機器學習？</h3>
+                       <p>
+                         
+                         ⟪Machine learning is programming computers to optimize a performance criterion using example data or past experience.⟫
+                         
+                         廣義來說，機器學習是一門使計算機能自動學習，利用資料或經驗去優化一個目標的表現。明確來說，機器學習就是從大量的數據中，依目的選定適當學習方法下，自動找出數據內潛在的規律。憑這些規律達到預測未來(沒看過)的資料。
+                         <br><br>
+
+                        </p>
+                        
+
+                     <h3 class="p-center">2.為什麼機器學習？</h3>
+                        <p>
+
+                         試想如果要寫一個樹的辨識系統，直覺的方法我們可以列出各種規則，告訴電腦樹的特徵是什麼，但只要有一棵樹的特徵不在規則內就辨識失敗。這個方法沒有彈性且顯得效率低落。回想人類是如何分辨樹的，為什麼我們能輕易地在一張圖中認出樹而不會誤認成其他東西？人類學習過程依據書本或生活經驗對樹進行認知，累積經驗內化到記憶裡，然後無形中找出某種規律， 所以我們能輕易地分辨出樹。 反觀樹的辨識系統，我們能否把人類分辨樹的方法明確地告訴電腦或寫成演算法？應該是很困難，因為我們也無法明確解釋自己是如何分辨樹。這時候，就可以使用機器學習。機器學習就是對人類學習過程的一種模擬，由上例可歸納出機器學習使用時機：
+                         </br></br>
+                         1.目標函數(target function)無法直接被定義
+                         </br>
+                         2.資料量夠大且存在某種不直觀的規律(underlying pattern)
+                         </br></br>
+                         
+                        </p>
+
+                     <h3 class="p-center">3.如何機器學習？</h3>
+                        <p>
+
+                         舉銀行核發信用卡為例，信用卡一般會以分期方式付款，銀行通常會透過客戶過去的資料評估是否有能力償還卡債，而整個評估的流程稱為信用評分(Credit Scoring, Hand 1998)，可能採取的考量有年收入,存款,職業,年齡等。而我們的目的是想利用這些歷史資料來決定未來的顧客是否核發信用卡。
+                         </br>       
+                         首先，x跟y代表銀行的歷史紀錄，x是銀行評估客戶的項目，代表資料的特徵，所以又稱feature space ;y是預測目標，代表顧客是否有拿到信用卡，通稱為label。我們的目的就是找到一個“目標函式”（target function)，當輸入客戶的特徵(x)後，就能判別是否發卡(y)。假設銀行員決定年收入(x1)和存款(x2)是判斷依據， 那我們的X可以表示為:
+                        
+                         </br></br>
+                         
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="font22" >
+        
+                            <mrow>
+                            <mi>x</mi>
+                            <mo>=</mo>
+            
+                            <mfenced open="[" close="]">
+            
+                            <mtable>
+                            <mtr>
+                            <mtd><mi>x1</mi></mtd>
+                            
+                            </mtr>
+                    
+                            <mtr>
+                            <mtd><mi>x2</mi></mtd>
+                            
+                            </mtr>
+                            </mtable>
+               
+                            </mfenced>
+                            </mrow>
+                            </math>
+                         </br></br>
+
+                         而我們的預測目標y，通過發卡為正，不通過為負
+
+                         </br></br>
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="font22" >
+        
+                            <mrow>
+                            <mi>y</mi>
+                            <mo>=</mo>
+            
+                            <mfenced open="{" close="}">
+            
+                            <mtable>
+                            <mtr>
+                            <mtd><mi>+ , approval</mi></mtd>
+                            
+                            </mtr>
+                    
+                            <mtr>
+                            <mtd><mi>- , rejection</mi></mtd>
+                            
+                            </mtr>
+                            </mtable>
+               
+                            </mfenced>
+                            </mrow>
+                            </math>
+                         </br></br>
+                         最後我們的歷史資料(training example)，D，可以表示成:
+                         </br></br>
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="font22" >
+                         
+                         <mrow>
+
+                          <mi>D</mi>
+                          <mo>=</mo>
+
+                           <mfenced open="{" close="}">
+                          
+                            <mmultiscripts>
+                             <mi> x </mi>
+                             <mi> t </mi>
+                             <mi> j </mi>
+                            </mmultiscripts>
+                          
+                            <mmultiscripts>
+                             <mi> y </mi>
+                             <mi> t </mi>
+                             <mi> j </mi>
+                            </mmultiscripts>                          
+                          
+                          
+
+                           </mfenced>
+                         </mrow>
+                           
+                         </math>
+                         </br></br>
+                         我們把D用一個二維的座標系統表示，而其相對應的位置(x1,x2)標記上預測目標y(+或-)
+                         ，如下圖，則經過剛剛的假設，我們可以預期年收入(x1)跟存款(x2)將會落在一個範圍內:
+                        
+                         </br></br>
+                         (p1 ≤ income ≤ p2) AND (e1 ≤ saving ≤ e2)
+                         </br></br>
+                          <img width="285" height="285" alt="" class="pure-img-responsive" src="img/ML/ML1.jpg"> 
+                         </br>
+                         以上這個式子就是我們要解的目標函數(target function)的“表示形式”，這個表現形式中的解集合稱為hypothesis set，而我們要求的f就是下圖矩形的區域，接下來利用演算法從hypothesis set中找到誤差最小的解g，就是找到一組最適合參數(p1,p2,e1,e2)，來逼近f。然而真實情況下這個f是未知，我們只能從已知的資料D中，去找出離這組資D料失誤最小的那組參數，最後當作目標函數(target function)來使用。
+                         </br></br>
+
+                        </p>
+                     
+
+                     <h3 class="p-center">4.總結</h3>
+                        <p>
+
+                         由上例，我們可歸納機器學習的流程圖：
+                         </br>
+                         1.對資料進行特徵萃取(feature extraction)，決定輸入變數x; 還有標記資料的預測目標(label)，就是y，這個步驟是處理訓練資料D的前置作業。
+                         </br>
+                         2.根據目的，利用萃取出資料的特徵x來建立目標函數(target function)的模型，而目標函數的解集合就是hypothesis set。</br>
+                         3.再利用演算法找出目標函數模型中失誤最小的參數，就是從hypothesis set中找出最符合資料D的解，最後讓這個解當作f。
+
+                        </p> 
+                        
+                         
+                         <img alt="" class="pure-img-responsive p-center" src="img/ML/ML2.jpg" style="width:85%;"> 
+                        
+                    </div>
+
+                </section>
+            </div>
+
+           
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <p class="font22 p-footer">Copyright © 2017 ViolaChen. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
