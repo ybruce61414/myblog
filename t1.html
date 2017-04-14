@@ -38,6 +38,11 @@
 .p-center{
  text-align: center;   
 }
+.post-ref{
+    font-size: 0.75em;
+    color: #999999;
+    line-height: 1.75em;
+}
 .p-footer{
     color: #cccccc;
 }
@@ -62,7 +67,7 @@
                         <a class="pure-button navbutton" href="">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pure-button navbutton" href="http://yuilibrary.com">YUI Library</a>
+                        <a class="pure-button navbutton" href="http://yuilibrary.com">category</a>
                     </li>
                 </ul>
             </nav>
@@ -102,7 +107,7 @@
                      <h3 class="p-center">2.為什麼機器學習？</h3>
                         <p>
 
-                         試想如果要寫一個樹的辨識系統，直覺的方法我們可以列出各種規則，告訴電腦樹的特徵是什麼，但只要有一棵樹的特徵不在規則內就辨識失敗。這個方法沒有彈性且顯得效率低落。回想人類是如何分辨樹的，為什麼我們能輕易地在一張圖中認出樹而不會誤認成其他東西？人類學習過程依據書本或生活經驗對樹進行認知，累積經驗內化到記憶裡，然後無形中找出某種規律， 所以我們能輕易地分辨出樹。 反觀樹的辨識系統，我們能否把人類分辨樹的方法明確地告訴電腦或寫成演算法？應該是很困難，因為我們也無法明確解釋自己是如何分辨樹。這時候，就可以使用機器學習。機器學習就是對人類學習過程的一種模擬，由上例可歸納出機器學習使用時機：
+                         試想如果要寫一個樹的辨識系統，直覺的方法我們可以列出各種樹的特徵，讓電腦用我們定義的特徵去判斷什麼是樹，但只要有一棵樹的特徵不在定義內就辨識失敗。這個方法沒有彈性且效率低落。回想人類是如何分辨樹，為什麼我們能輕易地在一張圖中認出樹而不會誤認成其他東西？人類學習過程依據書本或生活經驗對樹進行認知，累積經驗內化到記憶裡，然後無形中找出某種規律， 所以能輕易地分辨出樹。 反觀樹的辨識系統，我們能否把人類分辨樹的方法明確地告訴電腦或寫成演算法？應該很困難，因為我們也無法明確解釋自己是如何分辨樹。這時候，就可以使用機器學習。把各種樹的資料丟給電腦，讓電腦從中找到某種規律去判別樹。機器學習就是對人類學習過程的一種模擬，由上例可歸納出機器學習使用時機：
                          </br></br>
                          1.目標函數(target function)無法直接被定義
                          </br>
@@ -208,9 +213,9 @@
                          </br></br>
                          (p1 ≤ income ≤ p2) AND (e1 ≤ saving ≤ e2)
                          </br></br>
-                          <img width="285" height="285" alt="" class="pure-img-responsive" src="img/ML/ML1.jpg"> 
+                          <img width="285" height="285" alt="" class="pure-img-responsive" src="img/ML/ML1.png"> 
                          </br>
-                         以上這個式子就是我們要解的目標函數(target function)的“表示形式”，這個表現形式中的解集合稱為hypothesis set，而我們要求的f就是下圖矩形的區域，接下來利用演算法從hypothesis set中找到誤差最小的解g，就是找到一組最適合參數(p1,p2,e1,e2)，來逼近f。然而真實情況下這個f是未知，我們只能從已知的資料D中，去找出離這組資D料失誤最小的那組參數，最後當作目標函數(target function)來使用。
+                         以上這個式子就是我們要解的目標函數(target function)的“表示形式”，這個表現形式中的解集合稱為hypothesis set，而我們要求的f就是下圖矩形的區域，接下來利用演算法從hypothesis set中找到誤差最小的解，就是找到一組最適合參數(p1,p2,e1,e2)，來逼近f。然而真實情況下這個f是未知，我們只能從已知的資料D中，去找出離這組資D料失誤最小的那組參數，最後當作目標函數(target function)來使用。
                          </br></br>
 
                         </p>
@@ -219,18 +224,28 @@
                      <h3 class="p-center">4.總結</h3>
                         <p>
 
-                         由上例，我們可歸納機器學習的流程圖：
+                         由上例，我們可歸納機器學習的流程：
                          </br>
-                         1.對資料進行特徵萃取(feature extraction)，決定輸入變數x; 還有標記資料的預測目標(label)，就是y，這個步驟是處理訓練資料D的前置作業。
+                         1.對資料進行特徵萃取(feature extraction)，決定輸入變數x; 還有標記資料的預測目標(label)來決定y，這個步驟是處理訓練資料D的前置作業。
                          </br>
-                         2.根據目的，利用萃取出資料的特徵x來建立目標函數(target function)的模型，而目標函數的解集合就是hypothesis set。</br>
-                         3.再利用演算法找出目標函數模型中失誤最小的參數，就是從hypothesis set中找出最符合資料D的解，最後讓這個解當作f。
+                         2.根據目的，利用資料的特徵x來建立目標函數f(target function)的模型，而目標函數的解集合(H)就是hypothesis set。</br>
+                         3.再利用演算法A找出目標函數模型中失誤最小的參數，就是從hypothesis set中找出最符合資料的解g，最後讓這個解當作f。
 
                         </p> 
                         
                          
-                         <img alt="" class="pure-img-responsive p-center" src="img/ML/ML2.jpg" style="width:85%;"> 
+                         <img alt="" class="pure-img-responsive p-center" src="img/ML/ML2.png" style="width:88%;"> 
                         
+                        <p class="post-ref">
+                         參考資料：
+                         </br>
+                         1.台大資工系副教授林軒田「機器學習基石」課程
+                         </br>
+                         2.Introduction to Machine Learning Second Edition Ethem Alpaydın
+                         
+
+
+                        </p>
                     </div>
 
                 </section>
@@ -238,7 +253,7 @@
 
            
 
-            <div class="footer">
+            <div class="footer p-center">
                 <div class="pure-menu pure-menu-horizontal">
                     <p class="font22 p-footer">Copyright © 2017 ViolaChen. All Rights Reserved.</p>
                 </div>
