@@ -10,7 +10,7 @@ a {
 }
 a:hover,
 a:focus {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h3 {
@@ -34,6 +34,8 @@ h3 {
 }
 
 .sidebar {
+    /*background-image: url("http://www.krissyslifestyle.com/wp-content/uploads/2016/06/4.png");
+    background-size:cover;*/
     background-color: #004080;
     color: #fff;
 }
@@ -43,6 +45,7 @@ h3 {
     margin: 0;
 }
 .brand-title {
+    
     text-transform: uppercase;
 }
 .brand-tagline {
@@ -221,6 +224,7 @@ h3 {
     }
 
     .sidebar {
+           
         position: fixed;
         top: 0;
         bottom: 0;
