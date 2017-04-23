@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <meta name="description" content=" 波賽爾因子 是用來描述不同環境下發光分子自發性輻射（Spontaneous Emission Rate）的增加程度。一般來說，Purcell Factor常用在討論發光分子或雷射共振腔。">
     <title>Viola&ndash;Blog&ndash;Purcell</title>
     
     
@@ -116,47 +116,30 @@ a.ti:hover {
                          </math>
                          
                          
-                        是用來描述不同環境下發光分子自發性輻射（Spontaneous Emission Rate）的增加程度。一般來說，Purcell Factor常用在討論發光分子或雷射共振腔。若討論發光分子，Purcell                           Factor就是發光分子在<strong>環境中的功率</strong>與在<strong>真空中功率</strong>的<strong>比值</strong>;若用在光學雷射共振腔的描述，表示為<br><br>
+                        是用來描述不同環境下發光分子自發性輻射（Spontaneous Emission Rate）的增加程度。一般來說，Purcell Factor常用在討論發光分子或雷射共振腔。自發性輻射（Spontaneous Emission）是原子在激發態(excited state)時，原子中的電子從高能階躍遷至低能階的同時，會輻射出一顆光子(photon)。而自發性輻射率（Spontaneous Emission Rate）是代表單位時間內，處與激發態的原子回到基態(ground state)時的個數的比例常數，簡單說就是它正比於單位時間內放出的光子個數。所以當討論發光分子，Purcell Factor可表示為發光分子在<strong>環境中的功率<math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts><mi> P </mi><mi>  </mi><none/></mmultiscripts></math></strong>與在<strong>真空中功率<math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts><mi> P </mi><mi>0</mi><none/></mmultiscripts></math></strong>的<strong>比值</strong>;若用在光學雷射共振腔的描述，則表示為<br><br>
                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >
                           <mrow> 
 
-                            <mmultiscripts>
-                             <mi> F </mi>
-                             <mi> p </mi>
-                              <none/>
-                            </mmultiscripts>
+                            <mmultiscripts><mi> F </mi><mi> p </mi><none/></mmultiscripts>
                             
                             <mo> = </mo>
 
                              <mfrac>
                               <mi> 3 </mi>
-                              <mmultiscripts>
-                               <mi> 4𝜋 </mi>
-                               <none/>
-                               <mi> 2 </mi>
-                              </mmultiscripts>
+                              <mmultiscripts><mi> 4𝜋 </mi><none/><mi> 2 </mi></mmultiscripts>
                              </mfrac>
 
                              <mo> &InvisibleTimes; </mo>
 
-                            
                             <mmultiscripts>
 
                             <mfenced open="(" close=")">
                               <mfrac>
-                               <mmultiscripts>
-                                <mi> λ </mi>
-                                <mi>c</mi>
-                                <none/>
-                               </mmultiscripts>
-                              
-                               <mmultiscripts>
-                                 <mi> n </mi>
-                                 <none/>
-                                 <mo> &InvisibleTimes; </mo>
-                               </mmultiscripts>
+                               <mmultiscripts><mi> λ </mi><mi>c</mi><none/></mmultiscripts>
+                               <mmultiscripts><mi> n </mi><none/><mo> &InvisibleTimes; </mo></mmultiscripts>
                               </mfrac>
                             </mfenced>
+                            
                             <none/>
                             <mi> 3 </mi>
                             
@@ -166,15 +149,8 @@ a.ti:hover {
                             
                              <mfenced open="(" close=")">
                               <mfrac>
-                               <mmultiscripts>
-                                <mi> Q </mi>
-                               </mmultiscripts>
-                              
-                               <mmultiscripts>
-                                 <mi> V </mi>
-                                 <mi> m </mi>
-                                  <none/>
-                               </mmultiscripts>
+                               <mmultiscripts><mi> Q </mi></mmultiscripts>
+                               <mmultiscripts><mi> V </mi><mi> m </mi><none/></mmultiscripts>
                               </mfrac> 
                              </mfenced> 
 
@@ -182,11 +158,7 @@ a.ti:hover {
                         </math>，
                           <br><br>
                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
-                            <mmultiscripts>
-                                <mi> λ </mi>
-                                <mi>c</mi>
-                                <none/>
-                            </mmultiscripts>
+                            <mmultiscripts><mi> λ </mi><mi>c</mi><none/></mmultiscripts>
                         </math>
                         是發光波長，n是材料折射率，Q是品質因子(quality factor)，代表一個週期內腔體儲存的能量與散失的能量的比值。
                          <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
@@ -226,16 +198,413 @@ a.ti:hover {
 
                      <h3 class="p-center">2.如何計算Purcell Factor？</h3>
                         <p>
+                        很簡單，就是算功率。由電動力學中的波印停理論(Poyting Throrem)可知:<br>
+                        (以下粗體均為相量式，含空間中相位變化的資訊，省略時間項
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" class="p-center" > 
+                        <mmultiscripts><mi> e </mi><none/><mrow><mo>-</mo><mi>i</mi><mi>w</mi><mi>t</mi></mrow></mmultiscripts>
+                        </math>)
+                        <br><br>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow> 
+                           <mo> - </mo><mfrac><mi>1</mi><mi>2</mi></mfrac> 
+                           <munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+                           <mi>Re</mi>
+                            <mfenced open="{" close="}"><mrow>
+                             <mmultiscripts><mi mathvariant='bold'> j </mi><none/><mi>*</mi></mmultiscripts>
+                             <mo>&sdot;</mo>
+                             <mmultiscripts><mi mathvariant='bold'> E </mi></mmultiscripts>
+                            </mrow></mfenced> 
+                           <mi>dV</mi> 
+                           <mo> = </mo>
+                           <mn>2</mn><mi>i</mi><mi>w</mi><munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+                           <mfenced open="(" close=")"> <mrow>
+                             <mmultiscripts><mi> w </mi><mi>e</mi><none/></mmultiscripts>
+                             <mo>-</mo>
+                             <mmultiscripts><mi> w </mi><mi>m</mi><none/></mmultiscripts>
+                           </mrow></mfenced> 
+                           <mi>dV</mi><mo>+</mo>
+                           <munderover><mo>&conint;</mo><mi>S</mi><mo> &InvisibleTimes;</mo></munderover>
+                           <mfenced open="(" close=")"> <mrow>
+                           <mi mathvariant='bold'>S</mi><mo>&sdot;</mo><mi mathvariant='bold'>n</mi>
+                           </mrow></mfenced> 
+                           <mi>da</mi>
+                           </mrow></math>，<br><br>
+                        上式中，左式為<strong>電流源的功率<math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mi> P </mi></math></strong>，等於右式中<strong>環境吸收的功率</strong>加上<strong>能量散出觀測面的功率</strong>，遵守能量守恆定律。 所以只要算出上式中左式或右式就能知道發光分子的功率。接下來直接討論左式。
 
-                         
-                         </br></br>
-                         
+                        在電磁理論中，通常把發光分子用電偶極子(electric dipole)來近似，而電偶極矩
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow> 
+                           <mover accent="false">
+                            
+                             <mi> p </mi>
+                            
+                            <mo> &OverBar; </mo>
+                           </mover>
+                          </math>
+                         (electric dipole moment)定義為
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow> 
+                           <mover accent="false">
+                            <mi> p </mi>
+                            <mo> &OverBar; </mo>
+                           </mover>
+                           <mi>(</mi><mi>t</mi><mi>)</mi>
+                           <mo> = </mo>
+                           <mi> q(t) </mi> 
+                           <mover accent="false">
+                            <mi> d </mi>
+                            <mo> &OverBar; </mo>
+                           </mover>
+                           <mo> = </mo>
+                           <mi>Re</mi>
+                           <mfenced open="{" close="}"><mrow>
+                            <mi mathvariant='bold'> p </mi><mmultiscripts><mi> e </mi><none/><mrow><mo>-</mo><mi>i</mi><mi>w</mi><mi>t</mi></mrow></mmultiscripts>
+                           </mrow></mfenced> 
+                          </mrow>
+                         </math>，
+                        <br>
+                        <img alt="dipole" class="pure-img-responsive p-center" src="img/common/dipole.png" style="width:15%;"> 
+                        <br>
+                        把電偶極矩(electric dipole)對時間做一階微分再經簡單處理(推導略)可得電偶極子的電流密度
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow> 
+                            <mmultiscripts>
+                                <mi mathvariant='bold'> j </mi>
+                                <mi> d  </mi>
+                                <none/>
+                             </mmultiscripts>
+
+                           <mo> = </mo>
+                           <mo> - </mo><mi> i </mi><mi> w </mi>
+                           <mi mathvariant='bold'> p </mi>
+                           <mi>𝛿</mi><mi>(</mi><mi mathvariant='bold'>r</mi><mo>-</mo>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn> 0 </mn><none/></mmultiscripts><mi>)</mi>
+                          </mrow>
+                         </math>，帶入上式左式(
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                         <mmultiscripts><mi mathvariant='bold'> r </mi><mn> 0 </mn><none/></mmultiscripts>
+                         </math>是electric dipole位置)得： <br><br>
+                        
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow>
+                          <mi> P </mi>
+                          <mo> = </mo>
+                           <mo> - </mo><mfrac><mi>1</mi><mi>2</mi></mfrac> 
+                           <munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+                           <mi>Re</mi>
+                            <mfenced open="{" close="}"><mrow>
+                             <mmultiscripts><mi mathvariant='bold'> j </mi><none/><mi>*</mi></mmultiscripts>
+                             <mo>&sdot;</mo>
+                             <mmultiscripts><mi mathvariant='bold'> E </mi></mmultiscripts>
+                            </mrow></mfenced> 
+                           <mi>dV</mi> 
+                           <mo> = </mo>
+                           <mfrac><mi>w</mi><mo>2</mo></mfrac> 
+                           <mi>Im</mi>
+                            <mfenced open="{" close="}"><mrow>
+                             <mmultiscripts><mi mathvariant='bold'> p </mi><none/><mi>*</mi></mmultiscripts>
+                             <mo>&sdot;</mo>
+                             <mmultiscripts><mi mathvariant='bold'> E </mi><none/><mo> &InvisibleTimes; </mo></mmultiscripts><mi>(</mi><mmultiscripts><mi mathvariant='bold'> r </mi><mn> 0 </mn><none/></mmultiscripts><mi>)</mi>
+                            </mrow></mfenced> 
+                           </mrow>
+                         </math>，</br>
+                         有此可知，我們要解的就是電偶極子(electric dipole)所在位置的電場
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" > 
+                         <mmultiscripts><mi mathvariant='bold'> E </mi><none/><mo> &InvisibleTimes; </mo></mmultiscripts><mi>(</mi><mmultiscripts><mi mathvariant='bold'> r </mi><mn> 0 </mn><none/></mmultiscripts><mi>)</mi></math>。一旦知道電偶極子(electric dipole)所在位置的電場就能求出它的功率。然而Purcell Factor是電偶極子環境中與真空中功率的比值(
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts><mi> P </mi><mi>  </mi><none/></mmultiscripts></math>/<math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts><mi> P </mi><mi>0</mi><none/></mmultiscripts></math>)，而<math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts><mi> P </mi><mi>0</mi><none/></mmultiscripts></math>有解析解。
+                         接下來討論電偶極子(electric dipole)在真空中的功率
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts><mi> P </mi><mi>0</mi><none/></mmultiscripts></math>為何。<br><br>
+
+                         算<math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts><mi> P </mi><mi>0</mi><none/></mmultiscripts></math>方法有兩種：<br>
+                         1.用時間平均的波印亭相量(Time-averaged Poynting vector)對封閉曲面(包含電偶極子在內)做面積分。<br>
+                         2.直接求電偶極子(electric dipole)所在位置的電場。<br>
+                         法1的物理意義是求單位時間內發散到無窮遠的能量，但僅適用於無其他材料的狀況下;法2是不管在真空中或有其他材料存在時都適用，是一種通用的方法，所以在此討論法2。<br><br>
+
+
+                         <span class='font11'>step1:</span><br>
+                         電磁理論中滿足以下亥姆霍茲方程(Helmholtz equation)中的解
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="">
+                           <mmultiscripts>
+                             <mi> G </mi><mi>0</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts>
+                         </math>
+                         稱為scalar Green function，其物理意義就是脈衝的響應方程式：<br>
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >
+                          <mrow>
+                           <mfenced open="[" close="]"><mrow>
+                             <mmultiscripts><mo>&Del;</mo><none/><mi>2</mi></mmultiscripts>
+                             <mo>+</mo>
+                             <mmultiscripts><mi>k</mi><none/><mi>2</mi></mmultiscripts>
+                           </mrow></mfenced>
+
+                           <mmultiscripts>
+                           <mi> G </mi><mi>0</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts>
+                           <mi>(</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                           <mi>,</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+
+                           <mo>=</mo>
+
+                           <mo>-</mo>
+
+                           <mi>&delta;</mi>
+                           <mi>(</mi>
+                           <mi mathvariant='bold'> r </mi>
+                           <mo>-</mo>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                         </math>，&nbsp;<br><br>
+
+                         <span class='font11'>step2:</span><br>
+                         但在討論電磁場時會變得比較複雜，因為空間中的電場變成是點源極化方向(polarization)的函數，簡單講就是電偶極子(dipole)x、y、z三個極化方向，會各自產生一組對應的
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts>
+                           <mi> E </mi><mi>x</mi><mo> &InvisibleTimes; </mo></mmultiscripts></math>,
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts>
+                           <mi> E </mi><mi>y</mi><mo> &InvisibleTimes; </mo></mmultiscripts></math>,
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mmultiscripts>
+                           <mi> E </mi><mi>z</mi><mo> &InvisibleTimes; </mo></mmultiscripts></math>。假設點源極化方向為i (i=x, y, z)，則可表示：<br>
+
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >
+                          <mrow>
+                           <mfenced open="[" close="]"><mrow>
+                             <mmultiscripts><mo>&Del;</mo><none/><mi>2</mi></mmultiscripts>
+                             <mo>+</mo>
+                             <mmultiscripts><mi>k</mi><none/><mi>2</mi></mmultiscripts>
+                           </mrow></mfenced>
+
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> G </mi><mi>i</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts>
+                           <mi>(</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                           <mi>,</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+
+                           <mo>=</mo>
+
+                           <mo>-</mo>
+
+                           <mi>&delta;</mi>
+                           <mi>(</mi>
+                           <mi mathvariant='bold'> r </mi>
+                           <mo>-</mo>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> n </mi><mi>i</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts>
+                         </math>，&nbsp;<br>
+                         有此可知，一個極化方向對應三組分量(component)，一共有三個極化方向，所以G是一個3x3的矩陣。此時的G稱為dyadic Green function就是所謂的張量(tensor)。用更簡潔的方法表示為：<br>
+
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >
+                          <mrow>
+                           <mfenced open="[" close="]"><mrow>
+                             <mmultiscripts><mo>&Del;</mo><none/><mi>2</mi></mmultiscripts>
+                             <mo>+</mo>
+                             <mmultiscripts><mi>k</mi><none/><mi>2</mi></mmultiscripts>
+                           </mrow></mfenced>
+
+                          <mover>
+                           <mi> G </mi>
+                           <mo>&#x2194;</mo>
+                          </mover>   
+                           <mi>(</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                           <mi>,</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+
+                           <mo>=</mo>
+
+                           <mo>-</mo>
+
+                           <mi>&delta;</mi>
+                           <mi>(</mi>
+                           <mi mathvariant='bold'> r </mi>
+                           <mo>-</mo>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                           <mover>
+                           <mi> I </mi>
+                           <mo>&#x2194;</mo>
+                           </mover>   
+                         </math>，&nbsp;&nbsp;
+                         <math  xmlns="http://www.w3.org/1998/Math/MathML" class="" >
+                           <mover>
+                           <mi> I </mi>
+                           <mo>&#x2194;</mo>
+                           </mover>   
+                           <mo>=</mo>
+                               <mfenced><mtable>
+                                    <mtr>
+                                        <mtd><mn>1</mn></mtd>
+                                        <mtd><mn>0</mn></mtd>
+                                        <mtd><mn>0</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>0</mn></mtd>
+                                        <mtd><mn>1</mn></mtd>
+                                        <mtd><mn>0</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd><mn>0</mn></mtd>
+                                        <mtd><mn>0</mn></mtd>
+                                        <mtd><mn>1</mn></mtd>
+                                    </mtr>
+                                </mtable></mfenced>
+                          </math>
+
+                         &nbsp;<br><br>
+
+                         <span class='font11'>step3:</span><br>
+                         再把上式中兩邊跟
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >
+                         <mrow>
+                           <mi>i</mi><mi>w</mi><mi>&mu;</mi>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> j </mi><mi></mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>(</mi>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> r </mi><mi>0</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>)</mi>
+                          </mrow> 
+                        </math>做內積，對電流源做體積分：<br>
+
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >
+                          <mrow>
+                           <mi>i</mi><mi>w</mi><mi>&mu;</mi>
+                          <munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+                           <mfenced open="[" close="]"><mrow>
+                             <mmultiscripts><mo>&Del;</mo><none/><mi>2</mi></mmultiscripts>
+                             <mo>+</mo>
+                             <mmultiscripts><mi>k</mi><none/><mi>2</mi></mmultiscripts>
+                           </mrow></mfenced>
+
+                           
+                          <mover>
+                           <mi> G </mi>
+                           <mo>&#x2194;</mo>
+                          </mover>  
+                           <mi>(</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                           <mi>,</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                           
+                           <mo>&sdot;</mo>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> j </mi><mi></mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>(</mi>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> r </mi><mi>0</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>)</mi>
+                           <mmultiscripts>
+                           <mi> dV </mi><mi></mi><mo>'</mo>
+                           </mmultiscripts> 
+
+                           <mo>=</mo>
+
+                           <mo>-</mo>
+                            <mi>i</mi><mi>w</mi><mi>&mu;</mi>
+                          <munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+
+                           <mi>&delta;</mi>
+                           <mi>(</mi>
+                           <mi mathvariant='bold'> r </mi>
+                           <mo>-</mo>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                           <mover>
+                           <mi> I </mi>
+                           <mo>&#x2194;</mo>
+                          </mover>  
+                           <mo>&sdot;</mo>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> j </mi><mi></mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>(</mi>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> r </mi><mi>0</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>)</mi>
+                           <mmultiscripts>
+                           <mi> dV </mi><mi></mi><mo>'</mo>
+                           </mmultiscripts> 
+
+                           <mo>=</mo>
+                         <mo>-</mo> <mi>i</mi><mi>w</mi><mi>&mu;</mi>
+
+                         <mmultiscripts>
+                           <mi> j </mi><mi></mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>(</mi>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> r </mi><mi></mi><mo> &InvisibleTimes; </mo>
+                         </mmultiscripts> 
+                           <mi>)</mi>
+
+                         </math>，
+                         <br>
+
+                        比較均勻介質中電場波動方程可得：<br>
+
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mrow>
+
+                         <mmultiscripts>
+                           <mi mathvariant='bold'> E </mi><mi></mi><mo> &InvisibleTimes; </mo>
+                         </mmultiscripts>
+                         <mi>(</mi>
+                         <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                         <mi>)</mi>
+
+                         <mo>=</mo>
+                         <mi>i</mi><mi>w</mi><mi>&mu;</mi>
+
+                         <munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+
+                         <mover>
+                           <mi> G </mi>
+                           <mo>&#x2194;</mo>
+                        </mover>   
+                           <mi>(</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                           <mi>,</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                            <mo>&sdot;</mo>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> j </mi><mi></mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>(</mi>
+                           <mmultiscripts>
+                           <mi mathvariant='bold'> r </mi><mi>0</mi><mo> &InvisibleTimes; </mo>
+                           </mmultiscripts> 
+                           <mi>)</mi>
+                           <mmultiscripts>
+                           <mi> dV </mi><mi></mi><mo>'</mo>
+                           </mmultiscripts> 
+
+                         </mrow></math>，
+
+
+
+
+
+
                         </p>
 
                      
                      
 
-                     <h3 class="p-center">4.總結</h3>
+                     <h3 class="p-center"></h3>
                         <p>
 
                          
@@ -248,7 +617,7 @@ a.ti:hover {
                         <p class="post-ref">
                          參考資料：
                          </br>
-                         1.台大資工系副教授林軒田「機器學習基石」課程
+                         1.
                          </br>
                          2.Introduction to Machine Learning Second Edition Ethem Alpaydın
                          
