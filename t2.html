@@ -67,7 +67,7 @@ a.ti:hover {
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header font22">
-            <h1 class="brand-title"><a class="ti" href="https://ybruce61414.github.io/myblog/">Viola's Blog</a></h1>
+            <h1 class="brand-title"><a class="ti" href="">Viola's Blog</a></h1>
             <h2 class="brand-tagline">Learning Note</h2>
 
             <nav class="nav">
@@ -398,7 +398,7 @@ a.ti:hover {
                            <mi mathvariant='bold'> n </mi><mi>i</mi><mo> &InvisibleTimes; </mo>
                            </mmultiscripts>
                          </math>，&nbsp;<br>
-                         有此可知，一個極化方向對應三組分量(component)，一共有三個極化方向，所以G是一個3x3的矩陣。此時的G稱為dyadic Green function就是所謂的張量(tensor)。用更簡潔的方法表示為：<br>
+                         由此可知，一個極化方向對應三組分量(component)，一共有三個極化方向，所以G是一個3x3的矩陣。此時的G稱為dyadic Green function，就是所謂的張量(tensor)。用更簡潔的方法表示為：<br>
 
                          <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >
                           <mrow>
@@ -554,7 +554,7 @@ a.ti:hover {
                          </math>，
                          <br>
 
-                        比較均勻介質中電場波動方程可得：<br>
+                        比較均勻介質中電場波動方程可得(在Lorenz condiction下)：<br>
 
                          <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mrow>
 
@@ -592,23 +592,142 @@ a.ti:hover {
                            <mi> dV </mi><mi></mi><mo>'</mo>
                            </mmultiscripts> 
 
-                         </mrow></math>，
+                         </mrow></math>，<br><br>where 
+
+                         <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mrow>
+
+                        <mover>
+                           <mi> G </mi>
+                           <mo>&#x2194;</mo>
+                        </mover>   
+                           <mi>(</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                           <mi>,</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                           
+
+                         <mo>=</mo>
+                         <mfenced open="[" close="]"><mrow>
+                             <mover><mi> I </mi><mo>&#x2194;</mo></mover>   
+                             <mo>+</mo>
+                             <mfrac><mi>1</mi><mmultiscripts><mi>k</mi><none/><mi>2</mi></mmultiscripts></mfrac>
+                             <mo>&Del;</mo><mo>&Del;</mo>
+                           </mrow></mfenced>
+
+                           
+                          
+                           <mmultiscripts><mi> G </mi><mn> 0 </mn><none/></mmultiscripts>
+                          
+                           <mi>(</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mn>  </mn><none/></mmultiscripts>
+                           <mi>,</mi>
+                           <mmultiscripts><mi mathvariant='bold'> r </mi><mi>0</mi><none/></mmultiscripts>
+                           <mi>)</mi>
+                           
+                          </mrow></math>，<br>
+                          由此可知，電場可以由點電流源和Dyadic Green function做線性疊加(linear superposition)而得。
+                          <br><br>
+
+                          再把值代入<br>
+                          <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow>
+                           <mmultiscripts><mi> P </mi><mi>0</mi><none/></mmultiscripts>
+                          <mo> = </mo>
+                           <mo> - </mo><mfrac><mi>1</mi><mi>2</mi></mfrac> 
+                           <munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+                           <mi>Re</mi>
+                            <mfenced open="{" close="}"><mrow>
+                             <mmultiscripts><mi mathvariant='bold'> j </mi><none/><mi>*</mi></mmultiscripts>
+                             <mo>&sdot;</mo>
+                             <mmultiscripts><mi mathvariant='bold'> E </mi></mmultiscripts>
+                            </mrow></mfenced> 
+                           <mi>dV</mi> 
+                           </mrow>
+                           </math><br>
+
+                           <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow>
+                          <mo> = </mo>
+                           <mo> - </mo><mfrac><mi>1</mi><mi>2</mi></mfrac> 
+                           <munderover><mo> &int; </mo><mi> v </mi><mo> &InvisibleTimes;</mo></munderover>
+                           <mi>Re</mi>
+                            <mfenced open="{" close="}"><mrow>
+                             <mfenced open="(" close=")"><mrow>
+                               <mi>0</mi>
+                               <mi>,</mi>
+                               <mi>0</mi>
+                               <mi>,</mi>
+                               <mi> i </mi><mi> w </mi><mmultiscripts><mi mathvariant='bold'> p </mi><none/><mi>*</mi></mmultiscripts><mi>𝛿</mi><mi>(</mi><mi mathvariant='bold'>r</mi><mo>-</mo><mmultiscripts><mi mathvariant='bold'> r </mi><mn> 0 </mn><none/></mmultiscripts><mi>)</mi>
+                             </mrow></mfenced> 
 
 
+                             <mfenced><mtable>
+                                    <mtr>
+                                        
+                                        <mtd><mn>0</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                       
+                                        <mtd><mn>0</mn></mtd>
+                                    </mtr>
+                                    <mtr>
+                                        
+                                        <mtd><mrow><mo>&infin;</mo><mo>+</mo><mfrac><mrow><mi>i</mi><mi>k</mi></mrow><mi>6&pi;</mi></mfrac></mrow></mtd>
+                                    </mtr>
+                             </mtable></mfenced>
+                            
+                             <mmultiscripts><mi> w </mi><none/><mi>2</mi></mmultiscripts>
+                             <mo>&mu;</mo>
+                             <mi mathvariant='bold'>p</mi>
+                            </mrow></mfenced> 
+                           <mi>dV</mi> 
+                           </mrow></math><br><br>
 
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" class="" >  
+                          <mrow>
+                          <mo> = </mo>
+                           <mo> - </mo><mfrac><mmultiscripts><mi> p </mi><none/><mi>2</mi></mmultiscripts><mi>12&pi;</mi></mfrac> 
 
+                           <mi> </mi>
 
+                           <mfrac><mmultiscripts><mi> w </mi><none/><mi></mi></mmultiscripts><mo>&epsilon;</mo></mfrac> 
+                           
+                           <mmultiscripts><mi> k </mi><none/><mi>3</mi></mmultiscripts>
+
+                           </mrow>
+                           </math><br><br>
+                           所以Purcell Factor為：<br>
+                          <math xmlns="http://www.w3.org/1998/Math/MathML" class="" ><mrow>
+                          
+                           <mmultiscripts>
+                             <mi> F </mi>
+                             <mi> p </mi>
+                              <none/>
+                            </mmultiscripts> 
+                           
+
+                          
+                           <mo> = </mo>
+                           <mfrac><mi>6&pi;&epsilon;</mi><mrow><mmultiscripts><mi> p </mi><none/><mo>2</mo></mmultiscripts><mmultiscripts><mi> k </mi><none/><mo>3</mo></mmultiscripts></mrow></mfrac> 
+                           <mi>Im</mi>
+                            <mfenced open="{" close="}"><mrow>
+                             <mmultiscripts><mi mathvariant='bold'> p </mi><none/><mi>*</mi></mmultiscripts>
+                             <mo>&sdot;</mo>
+                             <mmultiscripts><mi mathvariant='bold'> E </mi><none/><mo> &InvisibleTimes; </mo></mmultiscripts><mi>(</mi><mmultiscripts><mi mathvariant='bold'> r </mi><mn> 0 </mn><none/></mmultiscripts><mi>)</mi>
+                            </mrow></mfenced> 
+                           </mrow>    
+                         </math>。
+                         
 
                         </p>
 
                      
                      
 
-                     <h3 class="p-center"></h3>
+                     <h3 class="p-center">3.總結</h3>
                         <p>
-
-                         
-
+                        波賽爾因子(Purcell Factor)在電磁理論計算中是一種量測的指標，能反應出光學近場(遠小於一個波長的距離)的資訊，能應用在近場光學顯微技術也廣泛運用在螢光分子週期造影技術(Fluorescence-lifetime imaging microscopy)等等，是一種得知光學近場的重要工具。
                         </p> 
                         
                          
@@ -617,9 +736,9 @@ a.ti:hover {
                         <p class="post-ref">
                          參考資料：
                          </br>
-                         1.
+                         1.Classical Electrodynamics John David Jacson
                          </br>
-                         2.Introduction to Machine Learning Second Edition Ethem Alpaydın
+                         
                          
 
 

@@ -34,8 +34,8 @@ h3 {
 }
 
 .sidebar {
-    /*background-image: url("http://www.krissyslifestyle.com/wp-content/uploads/2016/06/4.png");
-    background-size:cover;*/
+    /*background-image: url("p1.jpg");
+    background-size:contain;*/
     background-color: #004080;
     color: #fff;
 }
