@@ -34,8 +34,8 @@ h3 {
 }
 
 .sidebar {
-    /*background-image: url("p1.jpg");
-    background-size:contain;*/
+    background-image: url("ps.jpg");
+    background-size:contain;
     background-color: #004080;
     color: #fff;
 }
@@ -108,7 +108,7 @@ h3 {
 }
 .post-description {
     font-family: Georgia, "Cambria", serif;
-    font-size: 1.1em;
+    font-size: 1.0em;
     color: #595959;
     line-height: 1.77em;
 }
