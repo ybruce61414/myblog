@@ -34,7 +34,7 @@ h3 {
 }
 
 .sidebar {
-    background-image: url("ps.jpg");
+    background-image: url("p1");
     background-size:contain;
     background-color: #004080;
     color: #fff;
@@ -79,7 +79,7 @@ h3 {
 }
 
 .content-subhead {
-    text-transform: uppercase;
+    text-transform: ;
     color: #aaa;
     border-bottom: 1px solid #eee;
     padding: 0.4em 0;
@@ -106,9 +106,16 @@ h3 {
     float: right;
     margin-left: 1em;
 }
-.post-description {
+.post-description-index {
     font-family: Georgia, "Cambria", serif;
     font-size: 1.0em;
+    color: #595959;
+    line-height: 1.77em;
+}    
+
+.post-description {
+    font-family: Georgia, "Cambria", serif;
+    font-size: 1.1em;
     color: #595959;
     line-height: 1.77em;
 }
